@@ -7,3 +7,6 @@ plotly==7.1.0
 nbformat==5.11.1
 ipython==9.17.1
 ipykernel==7.4.0
+torch>=2.5
+xgboost>=2.1
+nbclient>=0.10

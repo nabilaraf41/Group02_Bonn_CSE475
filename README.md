@@ -25,9 +25,18 @@ Completed empirical EDA and research review using the five user-supplied archive
 - `data/manifest.json`: file IDs and labels; subject_id is null, not inferred.
 - `outputs/task1/`: computed statistics, split manifest, figures and interactive HTML.
 
+## Task 2 - baselines and proposed GCN
+- `report/task2/Group02_Bonn_task2_report.pdf`: preprocessing, baselines, graph design, architecture, own-words explanation, first results.
+- `code/task2/Group02_Bonn_task2_baselines.ipynb`: Logistic Regression, SVM, k-NN, Decision Tree, Random Forest, Gradient Boosting, XGBoost, MLP, 1D-CNN.
+- `code/task2/Group02_Bonn_task2_proposed_model.ipynb`: temporal-graph GCN (8 time-window nodes per segment; temporal, similarity and union edges; 5 seeds).
+- `code/task2/task2.py`: shared functions. `python code/task2/task2.py` runs a self-check.
+- `outputs/task2/`: result tables (CSV) and figures.
+
+Same fixed split as Task 1 (300/100/100, segment-level). Test macro-F1: Random Forest 0.860 (best baseline); GCN temporal 0.850 ± 0.017, union 0.833 ± 0.041, similarity 0.830 ± 0.021. The GCN does not yet beat the best baseline.
+
 ## Run
 1. Extract the full ZIP, preserving folders.
-2. Install Python 3.12 and run `python -m pip install -r requirements.txt`.
+2. Install Python 3.12 (or open the notebooks in Google Colab; they clone this repository automatically) and run `python -m pip install -r requirements.txt`.
 3. Open `code/task1/Group02_Bonn_task1_eda.ipynb` in Jupyter or VS Code and run all cells. Start within the project folder. A GPU is unnecessary.
 4. Open the three `H_*.html` files directly in a browser for offline interaction.
 
