@@ -32,7 +32,7 @@ Completed empirical EDA and research review using the five user-supplied archive
 - `code/task2/task2.py`: shared functions. `python code/task2/task2.py` runs a self-check.
 - `outputs/task2/`: result tables (CSV) and figures.
 
-Same fixed split as Task 1 (300/100/100, segment-level). Test macro-F1: Random Forest 0.860 (best baseline); GCN temporal 0.850 ± 0.017, union 0.833 ± 0.041, similarity 0.830 ± 0.021. The GCN does not yet beat the best baseline.
+Same fixed split as Task 1 (300/100/100, segment-level). Results are from the Google Colab run (CPU). Test macro-F1: Random Forest 0.860 (best baseline); GCN temporal 0.835 ± 0.012, similarity 0.830 ± 0.021, union 0.823 ± 0.033; 1D-CNN 0.832. The GCN does not yet beat the best baseline.
 
 ## Run
 1. Extract the full ZIP, preserving folders.
